@@ -6,6 +6,6 @@ class AppTheme {
         data: ThemeData.light(),
       );
 
-  factory AppTheme.dark() => AppTheme.dark();
+  factory AppTheme.dark() => AppTheme(data: ThemeData.dark());
   final ThemeData? data;
 }

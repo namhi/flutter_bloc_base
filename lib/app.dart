@@ -15,7 +15,7 @@ class App extends StatelessWidget {
       title: 'Flutter Base Project With Bloc',
       theme: AppTheme.light().data,
       darkTheme: AppTheme.dark().data,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       routerDelegate: router.routerDelegate,
       routeInformationParser: router.routeInformationParser,
       supportedLocales: S.delegate.supportedLocales,

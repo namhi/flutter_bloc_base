@@ -4,6 +4,7 @@ import 'package:flutter_bloc_base/navigation/router_name.dart';
 import 'package:go_router/go_router.dart';
 
 import '../authentication_state.dart';
+import '../features/home/home_page.dart';
 
 class AppRouter {
   late final router = GoRouter(
@@ -12,7 +13,12 @@ class AppRouter {
     urlPathStrategy: UrlPathStrategy.path,
     errorPageBuilder: (context, state) => MaterialPage(child: Container()),
     routes: [
-      GoRoute(path: RouteNames.home, builder: (context, state) => Container()),
+      GoRoute(
+        path: RouteNames.home,
+        pageBuilder: (context, state) => const MaterialPage(
+          child: HomePage(),
+        ),
+      ),
       GoRoute(path: RouteNames.about, builder: (context, state) => Container()),
       GoRoute(path: RouteNames.login, builder: (context, state) => Container()),
       GoRoute(
