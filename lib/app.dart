@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc_base/generated/l10n.dart';
 import 'package:flutter_bloc_base/theme/theme.dart';
 import 'navigation/app_router.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class App extends StatelessWidget {
   App({Key? key}) : super(key: key);
@@ -21,6 +22,9 @@ class App extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       localizationsDelegates: const [
         S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
       ],
     );
   }

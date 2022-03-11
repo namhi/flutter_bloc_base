@@ -35,16 +35,16 @@ class _BottomNavigationBar extends StatelessWidget {
           onTap: (index) => context.read<HomeBloc>().add(HomeTabChanged(index)),
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
+              icon: Icon(Icons.message),
+              label: 'Message',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.bar_chart),
-              label: 'Home',
+              icon: Icon(Icons.contact_phone),
+              label: 'Contact',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.update),
-              label: 'Report',
+              icon: Icon(Icons.explore),
+              label: 'Explore',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.people_alt),
